@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: #212121;
+  margin: 0;
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.logo {
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tombol {
+  display: none;
+  color: white;
+  font-size: 14pt;
+  margin-right: 20px;
+}
+
+.tombol:hover {
+  cursor: pointer;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.menu li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#content {
+  max-width: 900px;
+  padding: 10px 0;
+  margin: 100px auto 40px auto;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #0066cc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.step,
+.command-block {
+  background-color: #f4f4f4;
+  border-left: 5px solid #0066cc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.command {
+  font-family: monospace;
+  background-color: #e0e0e0;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #888;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu.aktif {
+    display: inline-block;
+    position: absolute;
+    top: 64px;
+    background: #212121;
+    padding: 10px 20px;
+    right: 0;
+    left: 0;
+  }
+
+  .menu.aktif li a {
+    padding: 10px;
+    display: inline-block !important;
+  }
+
+  .tombol {
+    display: block;
+  }
+}
